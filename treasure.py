@@ -13,3 +13,12 @@ Kata yang paling sering muncul adalah "harta"
 """
 arr = ["harta", "karun", "petualangan", "harta", "kunci", "harta", "petualangan", "harta"]
 # lanjutkan code dibawah ini
+from collections import Counter
+
+arr = ["harta", "karun", "petualangan", "harta", "kunci", "harta", "petualangan", "harta"]
+
+word_count = Counter(arr)
+
+most_common_word = word_count.most_common(1)[0][0]
+
+print(f'Kata yang paling sering muncul adalah "{most_common_word}"')

@@ -11,8 +11,7 @@ b = 4
 
 def pythagoras(a, b):
     c = (a**2 + b**2)**0.5
-    
-    c
-    
+    return c  # Mengembalikan nilai c
+
 nilai = pythagoras(a, b)
 print(nilai)

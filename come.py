@@ -38,4 +38,24 @@ for i in range(jumlah_penumpang):
     # lanjutkan code dibawah ini
     
 print(penumpang)
+penumpang = []
+jumlah_penumpang = int(input("Jumlah penumpang: "))
 
+for i in range(jumlah_penumpang):
+    nama = input(f"Penumpang {i+1}\nNama: ")
+    umur = int(input("Umur: "))
+    asal_planet = input("Asal planet: ")
+    
+    print()
+    
+    # Membuat dictionary untuk penumpang
+    data_penumpang = {
+        'nama': nama,
+        'umur': umur,
+        'asal planet': asal_planet
+    }
+    
+    # Menambahkan dictionary ke dalam list penumpang
+    penumpang.append(data_penumpang)
+
+print(penumpang)

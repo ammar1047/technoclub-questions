@@ -14,5 +14,9 @@ Output:
 """
 arr = range(1, 100)
 # lanjutkan code dibawah ini
+arr = range(1, 100)
+filtered_arr = [n for n in arr if n % 2 == 1]
+
+print(filtered_arr)
 
 
